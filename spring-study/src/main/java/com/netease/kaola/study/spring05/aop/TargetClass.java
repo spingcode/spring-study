@@ -1,5 +1,7 @@
 package com.netease.kaola.study.spring05.aop;
 
+import org.springframework.stereotype.Component;
+
 public class TargetClass {
 
     public String function01(String arg, Integer m) {
