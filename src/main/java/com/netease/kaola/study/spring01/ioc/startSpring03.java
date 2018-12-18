@@ -11,7 +11,7 @@ import java.util.Date;
 * 使用注解配置并且加载其他XML文件，添加包扫描
 * */
 @Configuration
-@ComponentScan(basePackages = {"com.netease.kaola.study.spring01.entity"})
+@ComponentScan(basePackages = {"com.netease.kaola.study.spring01"})
 @ImportResource({"spring01.xml"})
 @Import({startSpring02_anno.class})
 public class startSpring03 {
