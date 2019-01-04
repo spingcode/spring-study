@@ -17,7 +17,6 @@ public class JDKTargetProxy01 implements InvocationHandler{
     }
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-
         System.out.println(proxy.getClass());
         System.out.println(targetObject.getClass());
         Object result = method.invoke(targetObject, args);

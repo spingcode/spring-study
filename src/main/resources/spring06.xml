@@ -13,7 +13,8 @@
      ">
 
     <bean id="beforeAdvice" class="com.netease.kaola.study.spring06.aop.BeforeAdvice"/>
+    <bean id="afterAdvice" class="com.netease.kaola.study.spring06.aop.AfterAdvice"/>
     <bean id="targetObject" class="com.netease.kaola.study.spring04.aop.TargetObject"/>
-    <bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean" p:interceptorNames="beforeAdvice"
+    <bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean" p:interceptorNames="beforeAdvice,afterAdvice"
           p:target-ref="targetObject" p:proxyTargetClass="true"/>
 </beans>
